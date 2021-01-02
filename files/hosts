@@ -18,13 +18,13 @@
 #qa
 #db
 mon
-#[prod]
+#[website]
 #prod
-#[qa]
+#[quality]
 #qa
-#[db]
+#[database]
 #db
-[mon]
+[monitoring]
 mon
 #[webservers]
 #alpha.example.org
