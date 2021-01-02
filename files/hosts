@@ -18,11 +18,11 @@
 #qa
 #db
 mon
-#[website]
+[website]
 #prod
-#[quality]
+[quality]
 #qa
-#[database]
+[database]
 #db
 [monitoring]
 mon
