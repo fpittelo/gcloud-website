@@ -7,6 +7,14 @@
 
   #### SECURITY COMPLIANCE ###########################################
 
+    - name: Passwordless Sudo For sudo Group
+      lineinfile:
+        dest: /etc/sudoers
+        state: present
+        regexp: '^%sudo'
+        line: '%sudo ALL=(ALL) NOPASSWD: ALL'
+        validate: 'visudo -cf %s'
+
     - name: Add User to sudo Group
       user:
         name=adminfpi
