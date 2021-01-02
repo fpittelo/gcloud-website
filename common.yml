@@ -7,7 +7,7 @@
 
   #### SECURITY COMPLIANCE ###########################################
 
-  - name: Add User to sudo Group
+    - name: Add User to sudo Group
       user:
         name=adminfpi
         groups=sudo
