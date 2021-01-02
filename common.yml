@@ -1,0 +1,16 @@
+---
+- hosts: common
+  become: yes
+  remote_user: adminfpi
+  gather_facts: no
+  tasks:
+
+  #### SECURITY COMPLIANCE ###########################################
+
+  - name: Add User to sudo Group
+      user:
+        name=adminfpi
+        groups=sudo
+        append=yes
+        state=present
+        createhome=yes
