@@ -14,16 +14,16 @@
 #192.168.100.10
 # Ex 2: A collection of hosts belonging to the 'webservers' group
 [common]
-prod
-qa
-db
+#prod
+#qa
+#db
 mon
-[prod]
-prod
-[qa]
-qa
-[db]
-db
+#[prod]
+#prod
+#[qa]
+#qa
+#[db]
+#db
 [mon]
 mon
 #[webservers]
